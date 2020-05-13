@@ -112,14 +112,14 @@ Instrucciones para inciar el servidor
 2. Importar la base de datos "delilah.sql" que se encuentra dentro de la carpeta del proyecto, a phpmyadmin
 3. Abrir consola DOS (cmd) de Windows
 4. Ingresar a la carpeta del proyecto: delilahtp
-5. Iniciar el proyecto con el comando `npm run dev`
+5. Iniciar el proyecto con el comando `nodemon src/index.js`
 6. Si el servidor se inicia correctamente debería decir 
 ```
 [nodemon] 2.0.3
 [nodemon] to restart at any time, enter `rs`
 [nodemon] watching path(s): *.*
 [nodemon] watching extensions: js,mjs,json
-[nodemon] starting `node src/`
+[nodemon] starting `node src/index.js`
 { host: 'localhost', port: '3306', user: 'root', database: 'delilah' }
 Server on port 4000
 Conectado a la base de datos
@@ -156,6 +156,13 @@ CUENTA DE ADMIN
 usuario: admin
 password: admin123
 ```
+```
+BASE DE DATOS
+host: 'localhost'
+port: 3306
+user: root
+database: delilah
+```
 
 
 * Si un usuario tiene un pedido en curso, no puede crear otro hasta que el admin archive el pedido en curso.
@@ -177,4 +184,5 @@ password: admin123
 - Ver lista de productos
 - Crear un pedido
 - Cancelar un pedido
+- Cambiar el estado de un pedido a "ENTREGADO"
 ```
