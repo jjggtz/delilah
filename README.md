@@ -1,11 +1,11 @@
 # Delilah App
 ---
 
-##Proyecto N°3 "Delilah Restó" 
+## Proyecto N°3 "Delilah Restó" 
 ---
 Autor: Juan José Gutiérrez
 
-##Lista de archivos
+## Lista de archivos
 ------
 ```
 .:
@@ -106,7 +106,7 @@ usuarios.hbs
 main.hbs
 ```
 
-##Instrucciones para inciar el servidor
+## Instrucciones para inciar el servidor
 -----
 1. Ejecutar XAMPP o cualquier otro software de gestion de MySQL y Apache
 2. Importar la base de datos "delilah.sql" que se encuentra dentro de la carpeta del proyecto, a phpmyadmin
@@ -131,20 +131,20 @@ Indicaciones generales sobre la aplicación
 -----
 Paths:
 ```
-**/**  homepage
-**/signup**  registro de usuario
-**/signin**  inicio de sesión
-**/profile**  perfil de usuario
-**/links/platos**  listado de platos para elegir
-**/links/confirmar**  carrito de compras
-**/links/recibido**  confirmación de compra
-**/links/seguimiento**  seguimiento de compra
-**/links/admin**  consola de admin: pedidos en curso
-**/links/historial**  consola de admin: historial de pedidos
-**/links/usuarios**  consola de admin: lista de usuarios
-**/links/menu**  consola de admin: lista de platos
-**/links/add**  consola de admin: agregar un plato
-**/links/modificar**  consola de admin: modificar un plato
+/  homepage
+/signup  registro de usuario
+/signin  inicio de sesión
+/profile  perfil de usuario
+/links/platos  listado de platos para elegir
+/links/confirmar  carrito de compras
+/links/recibido  confirmación de compra
+/links/seguimiento  seguimiento de compra
+/links/admin  consola de admin: pedidos en curso
+/links/historial  consola de admin: historial de pedidos
+/links/usuarios  consola de admin: lista de usuarios
+/links/menu  consola de admin: lista de platos
+/links/add  consola de admin: agregar un plato
+/links/modificar  consola de admin: modificar un plato
 ```
 
 * Si un usuario tiene un pedido en curso, no puede crear otro hasta que el admin archive el pedido en curso.
