@@ -1,10 +1,10 @@
 # Delilah App
 ---
 
-## Proyecto N°3 "Delilah Restó" 
+Proyecto N°3 "Delilah Restó" 
 -----
 Autor: Juan José Gutiérrez
-## Lista de archivos
+Lista de archivos
 -----
 ```
 .:
@@ -105,7 +105,7 @@ usuarios.hbs
 main.hbs
 ```
 
-## Instrucciones para inciar el servidor
+Instrucciones para inciar el servidor
 -----
 1. Ejecutar XAMPP o cualquier otro software de gestion de MySQL y Apache
 2. Importar la base de datos "delilah.sql" que se encuentra dentro de la carpeta del proyecto, a phpmyadmin
