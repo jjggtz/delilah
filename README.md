@@ -2,11 +2,10 @@
 ---
 
 ## Proyecto N°3 "Delilah Restó" 
----
+-----
 Autor: Juan José Gutiérrez
-
 ## Lista de archivos
-------
+-----
 ```
 .:
 README.md
@@ -131,6 +130,7 @@ Indicaciones generales sobre la aplicación
 -----
 Paths:
 ```
+acceso para usuario:
 /  homepage
 /signup  registro de usuario
 /signin  inicio de sesión
@@ -139,12 +139,14 @@ Paths:
 /links/confirmar  carrito de compras
 /links/recibido  confirmación de compra
 /links/seguimiento  seguimiento de compra
-/links/admin  consola de admin: pedidos en curso
-/links/historial  consola de admin: historial de pedidos
-/links/usuarios  consola de admin: lista de usuarios
-/links/menu  consola de admin: lista de platos
-/links/add  consola de admin: agregar un plato
-/links/modificar  consola de admin: modificar un plato
+
+acceso para admin:
+/links/admin  pedidos en curso
+/links/historial  historial de pedidos
+/links/usuarios  lista de usuarios
+/links/menu  lista de platos
+/links/add  agregar un plato
+/links/modificar  modificar un plato
 ```
 
 * Si un usuario tiene un pedido en curso, no puede crear otro hasta que el admin archive el pedido en curso.
