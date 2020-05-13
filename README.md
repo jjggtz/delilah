@@ -150,7 +150,30 @@ acceso para admin:
 /links/modificar  modificar un plato
 ```
 
+```
+CUENTA DE ADMIN
+usuario: admin
+password: admin123
+```
+
+
 * Si un usuario tiene un pedido en curso, no puede crear otro hasta que el admin archive el pedido en curso.
 * Si un usuario cancela un pedido confirmado, no puede crear otro hasta que el admin archive el pedido cancelado.
 * Los usuarios pueden cargar productos en el carrito, desloguear y al volver seguirán estando en su carrito.
-
+* El acceso a la consola de admin solo es a través del path `/links/admin`.
+* El privilegio de admin solo se puede dar a un usuario editando la base de datos > tabla usuarios > campo Rol.
+* El admin puede:
+```
+- Cambiar estado de un pedido
+- Archivar un pedido
+- Ver lista de productos
+- Crear, editar y borrar un producto
+- Ver listado de usuarios
+- Borrar un usuario
+```
+* El usuario puede:
+```
+- Ver lista de productos
+- Crear un pedido
+- Cancelar un pedido
+```
