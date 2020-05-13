@@ -186,7 +186,7 @@ database: delilah
 - Archivar un pedido
 - Ver lista de productos
 - Crear, editar y borrar un producto
-- Ver listado de usuarios
+- Ver lista de usuarios
 - Borrar un usuario
 ```
 * El usuario puede:
