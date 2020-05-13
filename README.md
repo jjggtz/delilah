@@ -142,7 +142,7 @@ Indicaciones generales sobre la aplicación
 -----
 Paths:
 ```
-acceso para usuario:
+acceso para usuario y admin:
 /  homepage
 /signup  registro de usuario
 /signin  inicio de sesión
@@ -152,7 +152,7 @@ acceso para usuario:
 /links/recibido  confirmación de compra
 /links/seguimiento  seguimiento de compra
 
-acceso para admin:
+acceso único para admin:
 /links/admin  pedidos en curso
 /links/historial  historial de pedidos
 /links/usuarios  lista de usuarios
