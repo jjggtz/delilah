@@ -125,6 +125,7 @@ Server on port 4000
 Conectado a la base de datos
 ```
 En caso que no se conecte a la base de datos dirá "La conexión a la base de datos fue rechazada"
+
 7. Iniciar la aplicación desde la URL **http://localhost:4000/**
 
 Indicaciones generales sobre la aplicación
