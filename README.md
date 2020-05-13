@@ -1,11 +1,11 @@
 # Delilah App
-==========
+---
 
-Proyecto N°3 "Delilah Restó" 
+##Proyecto N°3 "Delilah Restó" 
 ---
 Autor: Juan José Gutiérrez
 
-Lista de archivos
+##Lista de archivos
 ------
 ```
 .:
@@ -106,7 +106,7 @@ usuarios.hbs
 main.hbs
 ```
 
-Instrucciones para inciar el servidor
+##Instrucciones para inciar el servidor
 -----
 1. Ejecutar XAMPP o cualquier otro software de gestion de MySQL y Apache
 2. Importar la base de datos "delilah.sql" que se encuentra dentro de la carpeta del proyecto, a phpmyadmin
@@ -114,7 +114,7 @@ Instrucciones para inciar el servidor
 4. Ingresar a la carpeta del proyecto: delilahtp
 5. Iniciar el proyecto con el comando `npm run dev`
 6. Si el servidor se inicia correctamente debería decir 
-`
+```
 [nodemon] 2.0.3
 [nodemon] to restart at any time, enter `rs`
 [nodemon] watching path(s): *.*
@@ -123,13 +123,14 @@ Instrucciones para inciar el servidor
 { host: 'localhost', port: '3306', user: 'root', database: 'delilah' }
 Server on port 4000
 Conectado a la base de datos
-`
+```
 En caso que no se conecte a la base de datos dirá "La conexión a la base de datos fue rechazada"
 7. Iniciar la aplicación desde la URL **http://localhost:4000/**
 
 Indicaciones generales sobre la aplicación
 -----
 Paths:
+```
 **/**  homepage
 **/signup**  registro de usuario
 **/signin**  inicio de sesión
@@ -144,6 +145,7 @@ Paths:
 **/links/menu**  consola de admin: lista de platos
 **/links/add**  consola de admin: agregar un plato
 **/links/modificar**  consola de admin: modificar un plato
+```
 
 * Si un usuario tiene un pedido en curso, no puede crear otro hasta que el admin archive el pedido en curso.
 * Si un usuario cancela un pedido confirmado, no puede crear otro hasta que el admin archive el pedido cancelado.
