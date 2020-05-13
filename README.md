@@ -134,7 +134,7 @@ Instrucciones para inciar el servidor
 Server on port 4000
 Conectado a la base de datos
 ```
-En caso que no se conecte a la base de datos dirá "La conexión a la base de datos fue rechazada"
+En caso que no se conecte a la base de datos dirá "La conexión a la base de datos fue rechazada" (Revisar punto 2 y 3)
 
 8. Iniciar la aplicación desde la URL **http://localhost:4000/**
 
