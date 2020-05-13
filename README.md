@@ -10,10 +10,19 @@ Lista de archivos
 ```
 .:
 README.md
+./Base de datos
 ./src
 package.json
-package-lock.json
+
+```
+```
+/Base de datos
 delilah.sql
+carrito.sql
+historial.sql
+menu.sql
+pedidos.sql
+usuarios.sql
 ```
 ```
 /src
@@ -108,12 +117,14 @@ main.hbs
 
 Instrucciones para inciar el servidor
 -----
-1. Ejecutar XAMPP o cualquier otro software de gestion de MySQL y Apache
-2. Importar la base de datos "delilah.sql" que se encuentra dentro de la carpeta del proyecto, a phpmyadmin
-3. Abrir consola DOS (cmd) de Windows
-4. Ingresar a la carpeta del proyecto: delilahtp
-5. Iniciar el proyecto con el comando `nodemon src/index.js`
-6. Si el servidor se inicia correctamente debería decir 
+1. Clonar el proyecto de Git a la pc.
+2. Ejecutar XAMPP o cualquier otro software de gestion de MySQL y Apache
+3. Importar la base de datos "delilah.sql" que se encuentra dentro de la carpeta "Base de datos" del proyecto, a phpmyadmin.
+   En la misma carpeta además están las tablas de la db, las cuales se pueden importar por separado
+4. Abrir consola DOS (cmd) de Windows
+5. Ingresar a la carpeta del proyecto: delilahtp
+6. Iniciar el proyecto con el comando `nodemon src/index.js`
+7. Si el servidor se inicia correctamente debería decir 
 ```
 [nodemon] 2.0.3
 [nodemon] to restart at any time, enter `rs`
@@ -126,7 +137,7 @@ Conectado a la base de datos
 ```
 En caso que no se conecte a la base de datos dirá "La conexión a la base de datos fue rechazada"
 
-7. Iniciar la aplicación desde la URL **http://localhost:4000/**
+8. Iniciar la aplicación desde la URL **http://localhost:4000/**
 
 Indicaciones generales sobre la aplicación
 -----
