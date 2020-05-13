@@ -38,7 +38,6 @@ keys.js
 /src/lib
 adminauth.js
 auth.js
-handlebars.js
 helpers.js
 passport.js
 ```
