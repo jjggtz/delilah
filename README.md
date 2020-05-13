@@ -196,3 +196,6 @@ database: delilah
 - Cancelar un pedido
 - Cambiar el estado de un pedido a "ENTREGADO"
 ```
+
+## El proyecto se encuentra subido a http://delilahtp.herokuapp.com 
+
