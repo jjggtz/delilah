@@ -1,9 +1,10 @@
 # Delilah App
 ---
 
-Proyecto N°3 "Delilah Restó" 
------
+## Proyecto N°3 "Delilah Restó" 
+
 Autor: Juan José Gutiérrez
+
 Lista de archivos
 -----
 ```
