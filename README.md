@@ -138,6 +138,19 @@ En caso que no se conecte a la base de datos dirá "La conexión a la base de da
 
 8. Iniciar la aplicación desde la URL **http://localhost:4000/**
 
+
+Configuración de acceso a la base de datos:
+-----
+Para configurar el acceso a la base de datos, abrir el archivo keys.js dentro de /src y corroborar que los datos sean los siguientes:
+```
+host: 'localhost'
+port: 3306
+user: root
+database: delilah
+```
+
+
+
 Indicaciones generales sobre la aplicación
 -----
 Paths:
@@ -145,6 +158,7 @@ Paths:
 acceso para usuario y admin:
 /  homepage
 /signup  registro de usuario
+/signupadmin registro de usuario con privilegios admin
 /signin  inicio de sesión
 /profile  perfil de usuario
 /links/platos  listado de platos para elegir
@@ -161,25 +175,15 @@ acceso único para admin:
 /links/modificar  modificar un plato
 ```
 
-```
-CUENTA DE ADMIN
-usuario: admin
-password: admin123
-```
-```
-BASE DE DATOS
-host: 'localhost'
-port: 3306
-user: root
-database: delilah
-```
 
-
-* Si un usuario tiene un pedido en curso, no puede crear otro hasta que el admin archive el pedido en curso.
-* Si un usuario cancela un pedido confirmado, no puede crear otro hasta que el admin archive el pedido cancelado.
+* El usuario no puede tener 2 pedidos en curso. Si ya tiene un pedido, no puede crear otro hasta que el admin archive el pedido en curso.
+* Si un usuario cancela un pedido con Estado NUEVO, el pedido se borra de la base de datos.
+* Si un usuario cancela un pedido con Estado CONFIRMADO, PREPARANDO, ENVIANDO o ENTREGADO, el pedido se cambia a Estado CANCELADO y el usuario no puede crear otro hasta que el admin archive el pedido cancelado. Esto es para que el usuario no pueda crear y cancelar indiscriminadamente pedidos ya confirmados.
+* Si un usuario indica que su pedido llegó, puede cambiar el estado a ENTREGADO en la base de datos.
 * Los usuarios pueden cargar productos en el carrito, desloguear y al volver seguirán estando en su carrito.
 * El acceso a la consola de admin solo es a través del path `/links/admin`.
-* El privilegio de admin solo se puede dar a un usuario editando la base de datos > tabla usuarios > campo Rol.
+
+
 * El admin puede:
 ```
 - Cambiar estado de un pedido
@@ -193,7 +197,8 @@ database: delilah
 ```
 - Ver lista de productos
 - Crear un pedido
-- Cancelar un pedido
+- Borrar un pedido nuevo
+- Cancelar un pedido confirmado, preparado o enviado.
 - Cambiar el estado de un pedido a "ENTREGADO"
 ```
 
